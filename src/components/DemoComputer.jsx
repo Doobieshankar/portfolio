@@ -13,7 +13,7 @@ const DemoComputer = (props) => {
   const { actions } = useAnimations(animations, group);
 
   const txt = useVideoTexture(
-    props.texture ? props.texture : "/textures/project/project1.mp4"
+    props.texture ? props.texture : "./textures/project/project1.mp4"
   );
 
   useEffect(() => {
@@ -1020,6 +1020,6 @@ const DemoComputer = (props) => {
   );
 };
 
-useGLTF.preload("/models/computer.glb");
+useGLTF.preload("./models/computer.glb");
 
 export default DemoComputer;

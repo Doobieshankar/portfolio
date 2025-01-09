@@ -1017,7 +1017,7 @@ const DemoComputer = (props) => {
         </group>
       </group>
     </group>
-  );
+  ); 
 };
 
 useGLTF.preload("./models/computer.glb");

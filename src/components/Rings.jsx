@@ -43,7 +43,7 @@ const Rings = ({ position }) => {
     }
   );
 
-  return (
+  return  (
     <Center>
       <group scale={0.5}>
         {Array.from({ length: 4 }, (_, index) => (

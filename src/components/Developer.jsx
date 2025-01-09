@@ -103,7 +103,7 @@ const Developer = ({ animationName = "idle", ...props }) => {
         skeleton={nodes.Wolf3D_Outfit_Top.skeleton}
       />
     </group>
-  );
+  ); 
 };
 
 useGLTF.preload("./models/human/developer.glb");

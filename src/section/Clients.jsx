@@ -27,7 +27,7 @@ const Clients = () => {
                   {Array.from({ length: 5 }).map((_, index) => (
                     <img
                       key={index}
-                      src="/assets/star.png"
+                      src="/portfolio/assets/star.png"
                       alt="star"
                       className="w-5 h-5"
                     />

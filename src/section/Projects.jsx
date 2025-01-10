@@ -83,7 +83,11 @@ const Projects = () => {
               rel="noreferrer"
             >
               <p>Check Live Site</p>
-              <img src="/assets/arrow-up.png" alt="arrow" className="w-3 h-3" />
+              <img
+                src="/portfolio/assets/arrow-up.png"
+                alt="arrow"
+                className="w-3 h-3"
+              />
             </a>
           </div>
 
@@ -92,7 +96,7 @@ const Projects = () => {
               className="arrow-btn"
               onClick={() => handleNavigation("previous")}
             >
-              <img src="/assets/left-arrow.png" alt="left arrow" />
+              <img src="/portfolio/assets/left-arrow.png" alt="left arrow" />
             </button>
 
             <button
@@ -100,7 +104,7 @@ const Projects = () => {
               onClick={() => handleNavigation("next")}
             >
               <img
-                src="/assets/right-arrow.png"
+                src="/portfolio/assets/right-arrow.png"
                 alt="right arrow"
                 className="w-4 h-4"
               />

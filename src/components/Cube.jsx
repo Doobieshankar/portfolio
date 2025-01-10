@@ -60,7 +60,7 @@ Cube.propTypes = {
 
 export default Cube;
  */
- 
+
 import gsap from "gsap";
 import { useEffect, useRef, useState } from "react";
 import { Float, useGLTF, useTexture } from "@react-three/drei";

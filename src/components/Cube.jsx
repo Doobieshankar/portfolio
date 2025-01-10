@@ -68,8 +68,8 @@ import PropTypes from "prop-types";
 
 const Cube = ({ position = [9, -4, 0], ...props }) => {
   const cubeRef = useRef();
-  const { nodes } = useGLTF("./models/cube.glb");
-  const texture = useTexture("./textures/cube.png");
+  const { nodes } = useGLTF("/models/cube.glb");
+  const texture = useTexture("/textures/cube.png");
   const [hovered, setHovered] = useState(false);
 
   useEffect(() => {
@@ -119,8 +119,8 @@ const Cube = ({ position = [9, -4, 0], ...props }) => {
 };
 
 // Preload resources outside the component
-useGLTF.preload("./models/cube.glb");
-useTexture.preload("./textures/cube.png");
+useGLTF.preload("/models/cube.glb");
+useTexture.preload("/textures/cube.png");
 
 // Prop validation
 Cube.propTypes = {

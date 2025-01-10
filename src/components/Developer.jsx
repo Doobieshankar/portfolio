@@ -4,16 +4,18 @@ import PropTypes from "prop-types";
 
 const Developer = ({ animationName = "idle", ...props }) => {
   const group = useRef();
-  const { nodes, materials } = useGLTF("/models/human/developer.glb");
-  const { animations: idleAnimation } = useFBX("/models/animations/idle.fbx");
+  const { nodes, materials } = useGLTF("/portfolio/models/human/developer.glb");
+  const { animations: idleAnimation } = useFBX(
+    "/portfolio/models/animations/idle.fbx"
+  );
   const { animations: saluteAnimation } = useFBX(
-    "/models/animations/salute.fbx"
+    "/portfolio/models/animations/salute.fbx"
   );
   const { animations: clappingAnimation } = useFBX(
-    "/models/animations/clapping.fbx"
+    "/portfolio/models/animations/clapping.fbx"
   );
   const { animations: victoryAnimation } = useFBX(
-    "/models/animations/victory.fbx"
+    "/portfolio/models/animations/victory.fbx"
   );
 
   idleAnimation[0].name = "idle";
@@ -106,11 +108,11 @@ const Developer = ({ animationName = "idle", ...props }) => {
   );
 };
 
-useGLTF.preload("/models/human/developer.glb");
-useFBX.preload("/models/animations/idle.fbx");
-useFBX.preload("/models/animations/salute.fbx");
-useFBX.preload("/models/animations/clapping.fbx");
-useFBX.preload("/models/animations/victory.fbx");
+useGLTF.preload("/portfolio/models/human/developer.glb");
+useFBX.preload("/portfolio/models/animations/idle.fbx");
+useFBX.preload("/portfolio/models/animations/salute.fbx");
+useFBX.preload("/portfolio/models/animations/clapping.fbx");
+useFBX.preload("/portfolio/models/animations/victory.fbx");
 
 Developer.propTypes = {
   animationName: PropTypes.string.isRequired,
